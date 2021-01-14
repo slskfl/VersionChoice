@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택을 시작하시겠습니까?" />
+    <Switch
+        android:id="@+id/swStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작함"/>
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 버전은?"
+        android:visibility="invisible"
+        android:textSize="20dp"/>
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+        <RadioButton
+            android:id="@+id/rdNuga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="누가"/>
+        <RadioButton
+            android:id="@+id/rdOreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오레오"/>
+        <RadioButton
+            android:id="@+id/rdPie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파이"/>
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/imImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="종료"/>
+    <Button
+        android:id="@+id/btnReStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="처음부터"/>
+
+</LinearLayout>
